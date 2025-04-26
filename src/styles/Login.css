@@ -1,0 +1,193 @@
+/* Login Container Styles */
+.login-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column; /* Ensures the content and footer are stacked vertically */
+  justify-content: center; /* Centers the login form vertically */
+  align-items: center; /* Centers the login form horizontally */
+  background: linear-gradient(rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.92)),
+              url('./dctr4.jpg') no-repeat center center/cover;
+  padding: 30px;
+  color: #fff;
+  font-family: 'Segoe UI', sans-serif;
+  
+}
+
+/* Card Styles for Login Form */
+.card {
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 100px;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #0077b6;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.subtext {
+  color: #555;
+  font-size: 15px;
+  margin-top: -10px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Input Group Styles */
+.input-group {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.input-icon {
+  position: absolute;
+  top: 40%;
+  left: 14px;
+  transform: translateY(-50%);
+  font-size: 18px;
+  color: #0077b6;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.input-group input {
+  padding: 12px 12px 12px 45px; 
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.input-group input:focus {
+  border-color: #0077b6;
+  outline: none;
+}
+
+/* Button Styles */
+button {
+  padding: 12px;
+  font-size: 16px;
+  background-color: #0077b6;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  width: 100%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #005f86;
+}
+
+/* Alert Styles */
+.alert {
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.alert-danger {
+  color: #a94442;
+  background-color: #f2dede;
+  border: 1px solid #ebccd1;
+}
+
+.alert-success {
+  color: #155724;
+  background-color: #d4edda;
+  border: 1px solid #c3e6cb;
+}
+
+/* Sign Up Link Styles */
+.link-signup {
+  color: #0077b6;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.link-signup:hover {
+  text-decoration: underline;
+}
+
+/* Footer Styles */
+.homepage-footer {
+  background-color: #012a4a;
+  padding: 20px;
+  text-align: center;
+  color: #ccc;
+  width: 100%; /* Full width for footer */
+  position:fixed;
+  bottom: 0; /* Fix the footer to the bottom */
+  left: 0; /* Align the footer to the left */
+  font-size: 10px;
+}
+
+.footer-links,
+.footer-socials {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.footer-links a,
+.footer-socials a {
+  color: #90e0ef;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover,
+.footer-socials a:hover {
+  color: #00b4d8;
+}
+
+.footer-socials a {
+  font-size: 18px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .homepage-features {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .homepage-buttons {
+    flex-direction: column;
+  }
+}
+.extra-text {
+  text-align:left;
+  margin-top: 15px;
+  font-size: 16px;
+  color: #555;
+}
+.extra-text p {
+  margin: 5px 0;
+}
+
+.link-reset,
+.link-signup {
+  color: #0077b6;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.link-signup:hover {
+  text-decoration: underline;
+}
+
+/* Make sure buttons and text do not overlap */

@@ -1,0 +1,143 @@
+.homepage-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: url('dctr4.jpg') no-repeat center center/cover;
+
+  color: #fff;
+  font-family: 'Segoe UI', sans-serif;
+  position: relative;
+}
+
+.hero-overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 40px 20px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.homepage-heading {
+  font-size: 42px;
+  color: #00b4d8;
+  margin-bottom: 10px;
+}
+
+.homepage-line {
+  width: 80%;
+  border-top: 2px solid #00b4d8;
+  margin-bottom: 20px;
+}
+
+.homepage-description {
+  font-size: 18px;
+  max-width: 600px;
+  color: #f1f1f1;
+  margin-bottom: 30px;
+}
+
+.homepage-features {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.feature-item {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+  width: 250px;
+  transition: transform 0.3s ease;
+}
+
+.feature-item:hover {
+  transform: scale(1.05);
+}
+
+.feature-item h3 {
+  color: #90e0ef;
+  margin-bottom: 10px;
+}
+
+.feature-item p {
+  color: #e0e0e0;
+}
+
+.cta-text {
+  font-size: 20px;
+  margin-bottom: 30px;
+  color: #caf0f8;
+}
+
+.homepage-buttons {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.homepage-buttons button {
+  padding: 12px 25px;
+  font-size: 16px;
+  background-color: #00b4d8;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.homepage-buttons button:hover {
+  background-color: #0077b6;
+}
+
+/* Footer Styles */
+.homepage-footer {
+  background-color: #012a4a;
+  padding: 20px;
+  text-align: center;
+  color: #ccc;
+  position: absolute;
+  font-size: 0.85rem;
+}
+
+.footer-links,
+.footer-socials {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.footer-links a,
+.footer-socials a {
+  color: #90e0ef;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover,
+.footer-socials a:hover {
+  color: #00b4d8;
+}
+
+.footer-socials a {
+  font-size: 18px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .homepage-features {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .homepage-buttons {
+    flex-direction: column;
+  }
+}

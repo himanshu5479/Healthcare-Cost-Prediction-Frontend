@@ -1,0 +1,191 @@
+/* Background & Container */
+.signup-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.92)),
+              url('./dctr4.jpg') no-repeat center center/cover;
+              .terms-container {
+                padding-top: 80px; /* adjust based on your navbar height */
+              }
+  padding: 30px;
+}
+
+/* Card Styling */
+.card {
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Heading */
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #0077b6;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/*subtext */
+.subtext {
+  color: #555;
+  font-size: 15px;
+  margin-top: -10px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Input Group with Icons */
+.input-group {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.input-group .icon,
+.input-icon {
+  position: absolute;
+  top: 50%;
+  left: 14px;
+  transform: translateY(-50%);
+  font-size: 18px;
+  color: #0077b6;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.input-group input {
+  padding: 12px 12px 12px 45px; 
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.input-group input:focus {
+  border-color: #0077b6;
+  outline: none;
+}
+
+/* Button */
+button {
+  padding: 12px;
+  font-size: 16px;
+  background-color: #0077b6;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  width: 100%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #005f86;
+}
+
+/* Alerts */
+.alert {
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.alert-danger {
+  color: #a94442;
+  background-color: #f2dede;
+  border: 1px solid #ebccd1;
+}
+
+.alert-success {
+  color: #155724;
+  background-color: #d4edda;
+  border: 1px solid #c3e6cb;
+}
+
+/* Link */
+.text-center a,
+.link-signup {
+  color: #0077b6;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.text-center a:hover,
+.link-signup:hover {
+  text-decoration: underline;
+}
+/* Footer Styles */
+.homepage-footer {
+  margin-top: auto;
+    background-color:  #012a4a;
+    color: white;
+    padding: 20px 10px;
+    text-align: center;
+}
+
+.footer-links,
+.footer-socials {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.footer-links a,
+.footer-socials a {
+  color: #90e0ef;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover,
+.footer-socials a:hover {
+  color: #00b4d8;
+}
+
+.footer-socials a {
+  font-size: 18px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .homepage-features {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .homepage-buttons {
+    flex-direction: column;
+  }
+}
+.extra-text {
+  text-align:left;
+  margin-top: 15px;
+  font-size: 16px;
+  color: #555;
+}
+.extra-text p {
+  margin: 5px 0;
+}
+
+
+.link-login {
+  color: #0077b6;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.link-signup:hover {
+  text-decoration: underline;
+}
+
+/* Make sure buttons and text do not overlap */

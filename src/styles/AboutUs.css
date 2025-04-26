@@ -1,0 +1,117 @@
+.aboutus-container {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f9fbfd;
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.92)),
+    url('./dctr4.jpg') no-repeat center center/cover;
+  }
+  
+  .aboutus-hero {
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .aboutus-hero h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+  }
+  
+  .aboutus-hero p {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  
+  /* ✨ Responsive Grid Layout for Sections */
+  .aboutus-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 boxes on large screens */
+    gap: 30px;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  @media (max-width: 1024px) {
+    .aboutus-content {
+      grid-template-columns: repeat(2, 1fr); /* 2 boxes on tablets */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .aboutus-content {
+      grid-template-columns: 1fr; /* 1 box per row on mobile */
+      padding: 20px;
+    }
+  
+    .aboutus-section {
+      padding: 20px;
+    }
+  
+    .aboutus-hero h1 {
+      font-size: 2.2rem;
+    }
+  }
+  
+  .aboutus-section {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.07);
+    text-align: center;
+    transition: all 0.3s ease;
+  }
+  
+  .aboutus-icon {
+    font-size: 3rem;
+    color: #0072ff;
+    margin-bottom: 15px;
+  }
+  
+  .aboutus-section h3 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+  }
+  
+  .aboutus-footer {
+    margin-top: auto;
+    background-color:  #012a4a;
+    color: white;
+    padding: 20px 10px;
+    text-align: center;
+  }
+  
+  .aboutus-footer .footer-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 5px;
+  }
+  
+  .aboutus-footer .footer-links a {
+    color: #aaa;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .aboutus-footer .footer-links a:hover {
+    color: white;
+  }
+  
+  .footer-socials a {
+    color: white;
+    margin: 0 10px;
+    font-size: 1.2rem;
+    transition: transform 0.3s ease;
+  }
+  
+  .footer-socials a:hover {
+    transform: scale(1.1);
+  }
+  
