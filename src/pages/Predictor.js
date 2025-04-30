@@ -1,12 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import "../styles/Predictor.css";
 import { motion } from "framer-motion";
 import { FaSpinner } from "react-icons/fa";
-//import {  FaFacebookF, FaTwitter, FaInstagram } from "react-icons/fa";
+//import { FaFacebookF, FaTwitter, FaInstagram } from "react-icons/fa";
 
 function Predictor() {
   const navigate = useNavigate();
@@ -38,7 +37,7 @@ function Predictor() {
     try {
       const token = localStorage.getItem("authToken");
       const res = await axios.post(
-        `${process.env.REACT_APP_API_URL}/predict`,
+        `${process.env.REACT_APP_BACKEND_URL}/predict`,  // Updated path
         {
           ...form,
           age: Number(form.age),

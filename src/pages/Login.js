@@ -23,8 +23,9 @@ function Login() {
     }
 
     try {
+      // Use the backend URL from the .env file
       const res = await axios.post(
-        `${process.env.REACT_APP_API_URL}/auth/login`,
+        `${process.env.REACT_APP_BACKEND_URL}/auth/login`, // Updated path
         form
       );
 

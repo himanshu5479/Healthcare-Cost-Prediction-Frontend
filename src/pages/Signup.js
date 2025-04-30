@@ -2,9 +2,8 @@ import React, { useState } from "react";
 import axios from "axios";
 import { useNavigate, Link } from "react-router-dom";
 import { motion } from "framer-motion";
-//import { FaEnvelope, FaLock, FaUser } from "react-icons/fa";
 import "../styles/Signup.css";
-import { FaEnvelope, FaLock, FaFacebookF, FaTwitter, FaInstagram,FaUser } from "react-icons/fa";
+import { FaEnvelope, FaLock, FaFacebookF, FaTwitter, FaInstagram, FaUser } from "react-icons/fa";
 
 function Signup() {
   const [form, setForm] = useState({
@@ -37,7 +36,8 @@ function Signup() {
     }
 
     try {
-      const res = await axios.post(`${process.env.REACT_APP_API_URL}/auth/signup`, form);
+      // Use the backend URL from the .env file
+      const res = await axios.post(`${process.env.REACT_APP_BACKEND_URL}/auth/signup`, form);
       if (res.data.status === "success") {
         navigate("/predict");
       } else {
@@ -122,22 +122,23 @@ function Signup() {
         </div>
       </motion.div>
 
-        <footer className="homepage-footer">
-              <div className="footer-links">
-                <Link to="/about">About Us</Link>
-                <Link to="/privacy">Privacy Policy</Link>
-                <Link to="/terms">Terms of Service</Link>
-                <Link to="/contact">Contact Us</Link>
-              </div>
-              <div className="footer-socials">
-                <a href="#" aria-label="Facebook"><FaFacebookF /></a>
-                <a href="#" aria-label="Twitter"><FaTwitter /></a>
-                <a href="#" aria-label="Instagram"><FaInstagram /></a>
-              </div>
-              <p className="copyright">© 2025 Healthcare Cost Predictor</p>
-            </footer>
+      <footer className="homepage-footer">
+        <div className="footer-links">
+          <Link to="/about">About Us</Link>
+          <Link to="/privacy">Privacy Policy</Link>
+          <Link to="/terms">Terms of Service</Link>
+          <Link to="/contact">Contact Us</Link>
+        </div>
+        <div className="footer-socials">
+          <a href="#" aria-label="Facebook"><FaFacebookF /></a>
+          <a href="#" aria-label="Twitter"><FaTwitter /></a>
+          <a href="#" aria-label="Instagram"><FaInstagram /></a>
+        </div>
+        <p className="copyright">© 2025 Healthcare Cost Predictor</p>
+      </footer>
     </div>
   );
 }
+console.log("Backend URL:", process.env.REACT_APP_BACKEND_URL);
 
 export default Signup;
